@@ -1,0 +1,103 @@
+
+@import url('https://fonts.cdnfonts.com/css/sk-concretica');
+
+
+div.navBar{
+
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 70px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #171717;
+
+}
+
+div.navItens{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    gap: 1.3rem;
+    margin-right: 1.3rem;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+
+    position: relative;
+
+    font-family: 'SK Concretica', sans-serif;    
+    color: rgb(250, 131, 49);
+    text-decoration: none;
+    font-size: 1.7rem;
+}
+
+a:hover{
+    color: #fd6700;
+}
+
+div.navItens li a::after{
+
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #fd6700;
+
+    height: 3px;
+    width: 0%;
+
+    transition: all .4s ease-in;
+}
+
+div.navItens li a:hover::after{
+
+    width: 100%;
+
+}
+
+button.btnLogOut{
+
+    height: 35px;
+    width: 35px;
+
+    font-size: 8px;
+
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    margin-right: 2rem;
+
+}
+
+div.navLogo{
+
+    position: relative;
+
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.navLogo img{
+
+    width: 100%;
+    height: 100px;
+
+}

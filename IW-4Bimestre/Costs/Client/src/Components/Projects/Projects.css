@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+div.projects div.navBar{
+
+    background: none;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+div.projects div.Load-Container div.loading#content{
+
+    display: none;
+}
+
+div.projects div.navBar li a{
+    color: black;
+}
+
+div.projects div.navBar li a::after{
+    background-color: black;
+} 
+
+div.projects div.footer{
+
+    background: none;
+
+}
+
+div.projects div.container{
+
+    background-image: url(../../Assets/Sky.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+   
+div.container div.project-costs{
+    
+    height: clamp(40%, 600px, 50%);
+    width: clamp(30%, 500px, 80%);
+
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 20px 40px 50px rgba(0, 0, 0, 0.3);
+}
+
+
+div.project-costs{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 1rem;
+    border-radius: 16px;
+
+}
+
+div.project-costs div.input-Field{
+
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+div.project-costs div.input-Field input{
+
+    width: clamp(50%, 200px, 30%);
+    height: 35px;
+
+    padding: 4px 17px;
+    opacity: .7;
+    font-family: 'Open Sans', sans-serif;
+
+    border-radius: 16px;
+    outline: none;
+    border: none;
+
+}
+
+div.project-costs div.input-Field input:focus,
+div.project-costs div.input-Field input:valid{
+
+    opacity: 1;
+    background-color: white;
+
+}
+
+div.project-costs div.input-Field label{
+
+    position: absolute;
+    top: -100%;
+
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+div.project-costs div.input-Field#Project-Orcamento{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+div.project-costs div.input-Field#Project-Orcamento input{
+
+    width: 35%;
+    margin: .3rem;
+
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    display: none;
+}
+
+div.project-costs div.input-Field select{
+
+    width: 45%;
+    height: 35px;
+
+    padding: 4px 15px;
+
+    border: none;
+    outline: none;
+    border-radius: 16px;
+
+}
+
+div.project-costs div.input-Field:last-child{
+
+    position: relative;
+
+}
+
+div.project-costs div.input-Field span.arrow{
+
+    position: absolute;
+    top: 0;
+    right: 135px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #7e5cba;
+    width: 35px;
+    height: 35px;
+
+    pointer-events: none;
+
+}
+
+div.project-costs div.input-Field span.arrow span.material-icons-round{
+
+    color: white;
+    transition: all .5s ease-out;
+
+}
+
+div.project-costs div.input-Field select:hover{
+
+    cursor: pointer;
+
+}
+div.project-costs div.input-Field select option{
+
+    width: 120px;
+    height: 30px;
+
+
+}
+
+div.project-costs input[type=submit]{
+
+    height: 45px;
+    width: clamp(40%, 200px, 30%);
+
+    border-radius: 16px;
+
+    border: none;
+    outline: none;
+
+    font-size: .98rem;
+
+    opacity: .8;
+
+    transition: all .4s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+div.project-costs input[type=submit]:hover{
+
+    cursor: pointer;
+    background-color: #7e5cba;
+    color: white;
+}

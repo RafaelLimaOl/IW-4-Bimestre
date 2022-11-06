@@ -1,0 +1,117 @@
+@import url('https://fonts.cdnfonts.com/css/sk-concretica');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+h1{
+    font-family: 'SK Concretica', sans-serif;                                             
+}
+
+p{
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+div.container{
+
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.Load-Container{
+
+    transition: all 1.5s ease-in-out;
+
+}
+
+div.loading{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #171616;
+    opacity: 1;
+    z-index: 9999;
+
+}
+
+div.loading p{
+
+    margin: 1rem;
+    font-size: 2rem;
+    color: white;
+
+}
+
+div.loading div.bubble-container{
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    animation: rotate 2.5s linear infinite;
+
+}
+
+@keyframes rotate {
+ 
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+
+div.loading div.bubble:first-child{
+
+    height: 20px;
+    width: 20px;
+
+    background-color: #fa8331;
+
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin: 5px;
+
+    scale: 0.3;
+    animation: grow 2.5s linear infinite 1.5s;
+
+}
+
+div.loading div.bubble:last-child{
+
+    width: 20px;
+    height: 20px;
+
+    background: white;
+
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin: 5px;
+
+    scale: 0.3;
+    animation: grow 2.5s linear infinite;
+
+}
+
+@keyframes grow {
+    
+    50%{
+        scale: 1.5;
+    }
+
+}

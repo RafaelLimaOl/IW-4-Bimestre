@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+div.form-Container{
+
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+div.formInput{
+
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.formInput input{
+
+    width: 100%;
+    height: 30px;
+
+    background:none;
+
+    color: #fd6700;
+    font-size: 1.12rem;
+    font-family: 'Open Sans', sans-serif;
+
+
+    border: none;
+    outline: none;
+}
+
+div.formInput label{
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    color: white;
+    width: 100%;
+    height: 100%;
+
+    font-size: .9rem;
+    font-family: 'Open Sans', sans-serif;
+
+    pointer-events: none;
+    border-bottom: 2px solid white;
+}
+
+div.formInput label::after{
+
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    width: 100%;
+    height: 100%;
+
+    border-bottom: 3px solid #fd6700;
+    transform: translateX(-100%);
+    transition: all .4s ease-in;
+}
+
+div.formInput label span{
+
+    position: absolute;
+    bottom: 5px;
+    left: 0%;
+
+    transition: all .3s ease-in-out;
+}
+
+div.formInput input:focus + label span,
+div.formInput input:valid + label span{
+
+    transform: translateY(-100%);
+
+    font-size: 1.3rem;
+
+    color: #fd6700;
+}
+
+div.formInput input:focus + label::after,
+div.formInput input:valid + label::after{
+
+    transform: translateX(0%);
+
+}
+
+
+div.formInput div.Eyes span#visibleOff{
+
+    display: none;
+
+}
+
+div.formSignUp{
+
+    height: 80%;
+    width: 80%;
+    
+    display: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: #0A0400;
+    
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+div.formSignUp div.illustration{
+
+    position: relative;
+
+    width: 35%;
+    height: 100%;
+    
+    overflow: hidden;
+}
+
+div.formSignUp div.illustration img{
+
+    position: relative;
+
+    width: 1102px;
+
+}
+
+div.formSignUp div.Form{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-left: 6.5rem;
+    
+    overflow: hidden;
+    height: clamp(30%, 500px, 60%);
+    width: clamp(25%, 500px, 45%);
+}
+
+div.formSignIn{
+    
+    height: 80%;
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+
+    background-color: #0A0400;
+    
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+div.formSignIn div.illustration{
+
+    position: relative;
+
+    width: 35%;
+    height: 100%;
+    
+    overflow: hidden;
+}
+
+div.formSignIn div.illustration img{
+
+    position: relative;
+
+    width: 1102px;
+
+}
+
+div.formSignIn div.Form{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;;
+    align-items: center;
+
+    margin-left: 6.5rem;
+    overflow: hidden;
+    height: clamp(30%, 500px, 60%);
+    width: clamp(25%, 500px, 45%);
+}
+
+div.Form div.formText{
+
+    color:white;
+    text-align: center;
+
+    font-size: 1.7rem;
+}
+
+div.Form div.slogan{
+
+    position: absolute;
+    top: 15%;
+    left: 20%;
+
+    width: clamp(100px, 200px, 300px);
+
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div.slogan img{
+
+    width: 100%;
+    height: 75px;
+
+}
+
+div.slogan p{
+
+    font-size: 1.4rem;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+div.slogan p:last-child{
+
+    color: #fa8331;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.3rem;
+}
+
+div.btnForm{
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+div.btnForm button{
+
+    height: 45px;
+    width: clamp(125px, 205px, 250px);
+
+    border-radius: 16px;
+    border: none;
+    outline: none;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: .98rem;
+    color: white;
+    
+    margin: .8rem;
+}
+
+
+div.btnForm button:first-child{
+
+    background: none;
+    color: #fd6700;
+    outline: 2px solid #fd6700;
+    transition: all .7s cubic-bezier(0.58, 0.6, 0.81, 0.22);
+}
+
+div.btnForm button:first-child:hover{
+
+    cursor: pointer;
+
+    background-color: #fd6700;
+    color: black;
+    outline: none;
+
+    outline: 2px solid #ff8734;
+}
+
+div.btnForm button:last-child{
+    
+    background-color: #fd6700;
+    color: black;
+    outline: none;
+    transition: all .7s cubic-bezier(0.58, 0.6, 0.81, 0.22);
+    
+}
+div.btnForm button:last-child:hover{
+
+    cursor: pointer;
+
+    background: none;
+    color: #fd6700;
+    outline: 2px solid #fd6700;
+
+    box-shadow: 1px 0px 13px 3px #fd6700;
+}
+

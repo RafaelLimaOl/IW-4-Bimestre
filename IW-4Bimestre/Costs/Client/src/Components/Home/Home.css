@@ -1,0 +1,97 @@
+
+
+div.home{
+
+    height: 100vh;
+    width: 100%;
+
+    background-image: url(../../Assets/homeIllustration.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+div.home p{
+
+    font-size: 2rem;
+    color: white;
+}
+
+div.home h1{
+
+    font-size: 3.4rem;
+    color: white;
+
+}
+
+div.home div.homeContainer span.material-icons-round{
+
+    margin-top: .72rem;
+    
+    color: rgb(250, 131, 49);
+    font-weight: bolder;
+    font-size: 2rem;
+
+    opacity: 0;
+    transform: translateY(8px);
+    transition: all .4s ease-in;
+
+}
+
+div.home div.homeContainer a::after{
+
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #fd6700;
+    height: 3px;
+    width: 0%;
+    transition: all .4s ease-in;
+
+}
+
+div.home div.homeContainer a:hover::after{
+
+    width: 115%;
+
+}
+
+div.home div.homeContainer a:hover + span.material-icons-round{
+
+    color: #fd6700;
+    animation: move 1.5s linear infinite;
+
+    opacity: 1;
+
+}
+
+@keyframes move{
+    
+    50%{
+        transform: translate(-10px, 8px);
+    }
+
+    100%{
+        transform: translate(0px, 8px);
+    }
+
+}
+
+div.container#homePage div.navBar{
+
+    background: none;
+    margin-top: 1.2rem;
+}
+
+div.container#homePage div.footer{
+
+    background: none;
+
+}
