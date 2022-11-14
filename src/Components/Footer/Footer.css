@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+div.footer{
+
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+
+
+    width: 100vw;
+    height: 90px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    background-color:  #171717;;
+
+}
+
+div.footer div.content{
+
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+div.footer button{
+
+    margin: 0rem 0rem .65rem 1.6rem;
+
+    height: 45px;
+    width: 45px;
+
+    transition: all .4s ease-in;
+}
+
+div.footer button:hover{
+
+    cursor: pointer;
+
+}
+
+div.footer div.content div.tooltip{
+
+    margin: 0rem 0rem .6rem .5rem;
+    padding: 7px;
+
+    background-color: white;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+
+    border-radius: 15px;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: 1s cubic-bezier(.68,-0.6,0,.26);
+
+}
+
+div.footer div.content:hover .tooltip{
+
+    cursor: pointer;
+
+    opacity: 1;
+    pointer-events: auto;
+}
+
+div.footer div.tooltip::before{
+
+    content: "";
+    position: absolute;
+    bottom: 45px;
+    left: 76px;
+    
+    height: 10px;
+    width: 10px;
+
+    transform: rotate(-45deg);
+
+    background-color: white;
+
+}
